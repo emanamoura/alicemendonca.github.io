@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6b3551;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    background-color: #FFFFFF;
+    color: #6b3551;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+
+header .logo {
+    width: 200px;
+}
+
+main {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 2rem 1rem;
+    color: #6b3551;;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    background-color: #6b3551;;
+    color: #ffffff;
+    border-radius: 0.25rem;
+}
+
+#inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    gap: 1rem;
+    align-content: center;
+}
+
+.mental_health {
+    max-width: 75%;
+    border-radius: 50%;
+}
+
+#inicio p {
+    align-self: center;
+    color: #f1f1f1;
+}
+
+.titulo-experiencia {
+    text-align: center;
+    color: #f1f1f1;
+}
+
+
+.titulo-experiencia h2 {
+    padding: 1.5rem;
+}
+
+#contato {
+    max-width: 100vw;
+    background-color: #ffffff;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f1f1f1;
+}
+
+#contato p {
+    font-size: 2rem;
+    color: #6b3551;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.qrcode {
+    width: 200px;
+}
+
+.informacao a {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: #6b3551;
+}
+
+@media (max-width: 600px) {
+    
+    header div, #inicio, #contato {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #inicio {
+        height: 100vh;
+        padding-top: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contato {
+        height: 100vh;
+    }
+
+}
